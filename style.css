@@ -1,0 +1,316 @@
+@charset "UTF-8";
+@media screen and (min-width: 1101px) {
+  .mt10 {
+    margin-top: 10px !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .mt10 {
+    margin-top: 0.90909vw !important;
+  }
+}
+
+@media screen and (min-width: 1101px) {
+  .mb10 {
+    margin-bottom: 10px !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .mb10 {
+    margin-bottom: 0.90909vw !important;
+  }
+}
+
+@media screen and (min-width: 1101px) {
+  .pt10 {
+    padding-top: 10px !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .pt10 {
+    padding-top: 0.90909vw !important;
+  }
+}
+
+@media screen and (min-width: 1101px) {
+  .pb10 {
+    padding-bottom: 10px !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .pb10 {
+    padding-bottom: 0.90909vw !important;
+  }
+}
+
+@media screen and (min-width: 1101px) {
+  .mt20 {
+    margin-top: 20px !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .mt20 {
+    margin-top: 1.81818vw !important;
+  }
+}
+
+@media screen and (min-width: 1101px) {
+  .mb20 {
+    margin-bottom: 20px !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .mb20 {
+    margin-bottom: 1.81818vw !important;
+  }
+}
+
+@media screen and (min-width: 1101px) {
+  .pt20 {
+    padding-top: 20px !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .pt20 {
+    padding-top: 1.81818vw !important;
+  }
+}
+
+@media screen and (min-width: 1101px) {
+  .pb20 {
+    padding-bottom: 20px !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .pb20 {
+    padding-bottom: 1.81818vw !important;
+  }
+}
+
+@media screen and (min-width: 1101px) {
+  .mt40 {
+    margin-top: 40px !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .mt40 {
+    margin-top: 3.63636vw !important;
+  }
+}
+
+@media screen and (min-width: 1101px) {
+  .mb40 {
+    margin-bottom: 40px !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .mb40 {
+    margin-bottom: 3.63636vw !important;
+  }
+}
+
+@media screen and (min-width: 1101px) {
+  .pt40 {
+    padding-top: 40px !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .pt40 {
+    padding-top: 3.63636vw !important;
+  }
+}
+
+@media screen and (min-width: 1101px) {
+  .pb40 {
+    padding-bottom: 40px !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .pb40 {
+    padding-bottom: 3.63636vw !important;
+  }
+}
+
+@media screen and (min-width: 1101px) {
+  .mt60 {
+    margin-top: 60px !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .mt60 {
+    margin-top: 5.45455vw !important;
+  }
+}
+
+@media screen and (min-width: 1101px) {
+  .mb60 {
+    margin-bottom: 60px !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .mb60 {
+    margin-bottom: 5.45455vw !important;
+  }
+}
+
+@media screen and (min-width: 1101px) {
+  .pt60 {
+    padding-top: 60px !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .pt60 {
+    padding-top: 5.45455vw !important;
+  }
+}
+
+@media screen and (min-width: 1101px) {
+  .pb60 {
+    padding-bottom: 60px !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .pb60 {
+    padding-bottom: 5.45455vw !important;
+  }
+}
+
+/*layout*/
+body {
+  font-family: YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #5f759b;
+  background-color: #f1f1f1;
+  line-height: 1.6;
+  -webkit-font-feature-settings: "palt" 1;
+          font-feature-settings: "palt" 1;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 1100px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+h2 {
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    padding: 0 3.63636vw;
+  }
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  padding: 1em;
+  text-align: center;
+  background-color: #f4f8ff;
+  line-height: 1;
+  font-weight: bold;
+}
+
+ul.num-1 li:first-child {
+  background-color: #5f759b;
+  color: #fff;
+}
+
+ul.num-2 li:last-child {
+  background-color: #5f759b;
+  color: #fff;
+}
+
+ul.num-3 li:nth-child(2) {
+  background-color: #5f759b;
+  color: #fff;
+}
+
+ul.num-4 li:nth-child(3) {
+  background-color: #5f759b;
+  color: #fff;
+}
+
+ul.num-5 li:not(:nth-child(4)){
+  background-color: #5f759b;
+  color: #fff;
+}
+
+ul.num-6 li:nth-last-child(3) {
+  background-color: #5f759b;
+  color: #fff;
+}
+
+ul.num-7 li:nth-child(n+2) {
+  background-color: #5f759b;
+  color: #fff;
+}
+
+ul.num-8 li:nth-child(-n+5) {
+  background-color: #5f759b;
+  color: #fff;
+}
+
+ul.num-9 li:nth-child(n+2):nth-child(-n+5) {
+  background-color: #5f759b;
+  color: #fff;
+}
+
+ul.num-10 li:nth-child(3n) {
+  background-color: #5f759b;
+  color: #fff;
+}
+
+ul.num-11 li:nth-child(even) {
+  background-color: #5f759b;
+  color: #fff;
+}
+
+ul.num-12 li:nth-child(odd) {
+  background-color: #5f759b;
+  color: #fff;
+}
+
+ul.num-13 li:nth-child(2n):nth-child(n+2):nth-child(-n+5) {
+  background-color: #5f759b;
+  color: #fff;
+}
+
+ul.num-14 li:nth-last-child(n+2),.num-14 li:nth-last-child(n+2) ~ li {
+  background-color: #5f759b;
+  color: #fff;
+}
+
+ul.num-15 li:nth-last-child(n+100),.num-15 li:nth-last-child(n+100) ~ li {
+  background-color: #5f759b;
+  color: #fff;
+}

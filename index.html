@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>何番目系擬似クラス</title>
+<script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+</head>
+<body>
+  <div class="container pt60 pb60">
+    <h1 class="mb20">何番目系擬似クラス</h1>
+    <p class="mb40">見出しをクリックすると各擬似クラスをコピーできます。</p>
+    <section>
+      <h2 class="mb20">一番最初 <br><span>:first-child</span></h2>
+      <ul class="num-1">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+      </ul>
+    </section>
+    <section class="mt40">
+      <h2 class="mb20">一番最後 <br><span>:last-child</span></h2>
+      <ul class="num-2">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+      </ul>
+    </section>
+    <section class="mt40">
+      <h2 class="mb20">2番目 <br><span>:nth-child(2)</span></h2>
+      <ul class="num-3">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+      </ul>
+    </section>
+    <section class="mt40">
+      <h2 class="mb20">3番目 <br><span>:nth-child(3)</span></h2>
+      <ul class="num-4">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+      </ul>
+    </section>
+    <section class="mt40">
+      <h2 class="mb20">4番目以外 <br><span>:not(:nth-child(4)) </span></h2>
+      <ul class="num-5">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+      </ul>
+    </section>
+    <section class="mt40">
+      <h2 class="mb20">後ろから3番目 <br><span>:nth-last-child(3)</span></h2>
+      <ul class="num-6">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+      </ul>
+    </section>
+    <section class="mt40">
+      <h2 class="mb20">2番目以降 <br><span>:nth-child(n+2)</span></h2>
+      <ul class="num-7">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+      </ul>
+    </section>
+    <section class="mt40">
+      <h2 class="mb20">5番目以前 <br><span>:nth-child(-n+5)</span></h2>
+      <ul class="num-8">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+      </ul>
+    </section>
+    <section class="mt40">
+      <h2 class="mb20">2番目から5番目 <br><span>:nth-child(n+2):nth-child(-n+5)</span></h2>
+      <ul class="num-9">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+      </ul>
+    </section>
+    <section class="mt40">
+      <h2 class="mb20">3の倍数番目 <br><span>:nth-child(3n)</span></h2>
+      <ul class="num-10">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+      </ul>
+    </section>
+    <section class="mt40">
+      <h2 class="mb20">偶数番目 <br><span>:nth-child(even)</span></h2>
+      <ul class="num-11">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+      </ul>
+    </section>
+    <section class="mt40">
+      <h2 class="mb20">奇数番目 <br><span>:nth-child(odd)</span></h2>
+      <ul class="num-12">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+      </ul>
+    </section>
+    <section class="mt40">
+      <h2 class="mb20">2番目から5番目の偶数 <br><span>:nth-child(even)li:nth-child(n+2):nth-child(-n+5)</span></h2>
+      <ul class="num-13">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+      </ul>
+    </section>
+    <section class="mt40">
+      <h2 class="mb20">2個以上の場合、全てに適用<br><span>:nth-last-child(n+2),li:nth-last-child(n+2) ~ li</span></h2>
+      <ul class="num-14">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+      </ul>
+    </section>
+    <section class="mt40">
+      <h2 class="mb20">100個以上の場合、全てに適用<br><span>:nth-last-child(n+100),li:nth-last-child(n+100) ~ li</span></h2>
+      <ul class="num-15">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+      </ul>
+    </section>
+  </div>
+
+</body>
+</html>
