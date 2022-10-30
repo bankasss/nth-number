@@ -200,7 +200,7 @@ body {
   background-color: #f1f1f1;
   line-height: 1.6;
   -webkit-font-feature-settings: "palt" 1;
-          font-feature-settings: "palt" 1;
+  font-feature-settings: "palt" 1;
   overflow-x: hidden;
 }
 
@@ -216,9 +216,14 @@ h2 {
 
 .container {
   width: 100%;
-  max-width: 750px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 1100px) {
+  .container {
+    max-width: 750px;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -232,12 +237,24 @@ ul {
   display: flex;
 }
 
+@media screen and (max-width: 1100px) {
+  ul {
+    flex-wrap: wrap;
+  }
+}
+
 li {
   padding: 1em;
   text-align: center;
   background-color: #f4f8ff;
   line-height: 1;
   font-weight: bold;
+}
+
+@media screen and (max-width: 1100px) {
+  li {
+    width: calc(100% / 5);
+  }
 }
 
 ul.num-1 li:first-child {
